@@ -4,13 +4,13 @@ import './index.css';
 // import App from './App';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
-import background from './components/App/my_bg.png'
+import background from './components/App/background.jpg'
 
 ReactDOM.render(
   // <React.StrictMode>
-  <div style={{backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat'}}>
+  // <div style={{backgroundImage: `url(${background})`, width:"100%", height:"100%", backgroundRepeat: 'repeat'}}>
     <App />
-    </div>
+    // </div>
   // </React.StrictMode>,
   ,
   document.getElementById('root')

@@ -510,7 +510,7 @@ function App(props) {
   
   
   return (
-    <div >
+    <div>
       <ToastContainer />
         <Grid container className={classes.root} spacing={2} >
           <Grid item xs={12}>
@@ -522,8 +522,7 @@ function App(props) {
           <Grid item xs={12}></Grid>
           <Grid item xs={12}></Grid>
           <Grid item xs={12}></Grid>
-          <Grid item xs={12}></Grid>
-          <Grid item xs={12}></Grid>
+        
 
 
 
@@ -534,6 +533,11 @@ function App(props) {
           
           
           <Grid item xs={9} className={classes.root}>
+          <div style={{background: `url(${background})`,
+            height: '100%',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'}}>
             {validated ?
             <Paper variant="outlined" className={classes.paper}>
               <Grid container className={classes.root} spacing={2}  align="center" justify = "center" alignItems = "center">
@@ -611,12 +615,13 @@ function App(props) {
           
 
               </Grid>
+
             </Paper>
         
         :
           <Paper variant="outlined" className={classes.paper}>
             <Grid container className={classes.root} spacing={2} align="center" justify = "center" alignItems = "center">
-            <div class="jumbotron">
+            <div>
 
             <Typography variant="h6" align="left" >Hey there, welcome to Alice the Builder gamebox! You and your opponent have to each build <em>n</em> towers comprising of <em>f</em> floors.
             Initially each of you are given a collection of <em>f</em> blocks in <em>n</em> different colors (a total of <em>n*f</em> blocks).
@@ -660,7 +665,9 @@ function App(props) {
           </Paper>
           
         }
+         </div>
         </Grid>
+       
         </Grid>
           
         
