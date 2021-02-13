@@ -14,6 +14,8 @@ import Settings from "../Settings/Settings"
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Grid';
+import ListItem from '@material-ui/core/ListItem';
+import background from './my_bg.png'
 
 import Typography from '@material-ui/core/Typography';
 
@@ -195,8 +197,8 @@ function App(props) {
   const [color, setColor] = useState("");
   const [p1Turn, setP1Turn] = useState(true);
   const settingsDict = {
-    "player1Name"  : "Player 1",
-    "player2Name" : "Player 2",
+    "player1Name"  : "Alice",
+    "player2Name" : "Bob",
     "numTowers" : 4, 
     "numFloors" : 4
   };
@@ -508,12 +510,12 @@ function App(props) {
   
   
   return (
-    <div>
+    <div >
       <ToastContainer />
         <Grid container className={classes.root} spacing={2} >
           <Grid item xs={12}>
             <Typography variant="h3" align="center" >
-              Tower Builder
+              Alice the Builder
             </Typography>
           </Grid>
           <Grid item xs={12}></Grid>
@@ -614,7 +616,46 @@ function App(props) {
         :
           <Paper variant="outlined" className={classes.paper}>
             <Grid container className={classes.root} spacing={2} align="center" justify = "center" alignItems = "center">
-                <div><img src='./my_bg.png' width="120%" height="110%"/></div>
+            <div class="jumbotron">
+
+            <Typography variant="h6" align="left" >Hey there, welcome to Alice the Builder gamebox! You and your opponent have to each build <em>n</em> towers comprising of <em>f</em> floors.
+            Initially each of you are given a collection of <em>f</em> blocks in <em>n</em> different colors (a total of <em>n*f</em> blocks).
+
+            You will play against your opponent in two stages,
+            </Typography>
+                <br></br>
+            <Typography variant="body1" align="justify">
+            <b>Unsorted tower building phase: </b>In this phase you and your opponent have to start building the tower block by block until both have exhausted your blocks.
+            </Typography>
+            <Typography variant="body2" align="justify">
+             --- Click on a block and then choose a tower to place it in <br></br>
+                        
+                        --- Double click on a tower to clear all the blocks in the tower<br></br>
+                    
+                    --- You are not allowed to stack more than two blocks of the same color together<br></br>
+                    
+
+            </Typography>
+            
+             <br></br>
+             
+             <Typography variant="body1" align="justify">   
+                 
+                 
+                     <b>Sort the tower phase: </b>In the second phase, you have to sort the towers one block in each turn with the help of two empty towers. Your aim is to
+                     finish sorting all the blocks that you started with, into homogenous towers (consisting of only blocks of the original color assigned to you) within a given number of moves.
+            </Typography>
+
+            <Typography variant="body2" align="justify">--- Select the tower you want to move a block from first, followed by the tower you want to move it to and submit your move.
+                         </Typography>
+                            
+                         <br></br>
+
+                         <Typography variant="body1" align="justify"> <b>The first player who constructs maximum number of tallest homogenous towers (with colors assigned to them) in least number of moves WINS. 
+   </b> </Typography>
+           
+                  </div>
+                {/* <div><img src='./my_bg.png' width="120%" height="110%"/></div> */}
             </Grid>
           </Paper>
           
