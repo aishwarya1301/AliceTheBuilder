@@ -1,0 +1,17 @@
+.Sidebar {
+  width: 80px;
+  /* border: 2px solid white; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding: 5px;
+  margin: 5px;
+
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #000000
+}
+
+.Sidebar .Button {
+  margin-top: 5px;
+}

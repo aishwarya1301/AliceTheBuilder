@@ -1,0 +1,24 @@
+.TestTube {
+  width: 32px;
+  padding: 1px;
+  /* height: 140px; */
+  border: 2px solid black;
+  margin: 5px;
+  /* border-radius: 30px; */
+}
+/* 
+.CustomHeight {
+  height: 140px;
+} */
+
+.active {
+  background-color: rgba(255, 171, 64, 0.65);
+}
+
+.TestTube .BallWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
