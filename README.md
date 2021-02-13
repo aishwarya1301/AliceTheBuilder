@@ -1,5 +1,5 @@
 # Alice the Builder
-Play the Game: https://towers-304714.uk.r.appspot.com/
+Play the Game: https://towers-304714.uk.r.appspot.com/  
 Watch the Demo: https://youtu.be/N1CD4DlM2fs
 
 # Game Instructions
