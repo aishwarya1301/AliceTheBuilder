@@ -1,3 +1,7 @@
+# Alice the Builder
+Play the Game: https://towers-304714.uk.r.appspot.com/
+Watch the Demo: https://youtu.be/N1CD4DlM2fs
+
 # Game Instructions
 Hey there, welcome to Alice the Builder gamebox! You and your opponent have to each build n towers comprising of f floors. Initially each of you are given a collection of f blocks in n different colors (a total of n*f blocks). You will play against your opponent in two stages,
 
@@ -16,5 +20,5 @@ Sort the tower phase: In the second phase, you have to sort the towers one block
 The first player who constructs maximum number of tallest homogenous towers (with colors assigned to them) in least number of moves WINS.
 
 
-https://towers-304714.uk.r.appspot.com/
+
 
